@@ -1,5 +1,5 @@
 import React from 'react';
-
+import '@fortawesome/fontawesome-free/css/all.min.css';
 const Footer = () => {
   return (
     <>
@@ -13,12 +13,12 @@ const Footer = () => {
             <div className="col-lg-3 col-md-6">
               <h4 className="text-primary mb-4">Our Office</h4>
               <p className="mb-2">
-                <i className="fa fa-map-marker-alt text-primary me-3"></i>123
-                Street, New York, USA
+                <i className="fa fa-map-marker-alt text-primary  me-3"></i>
+                123 Street, New York, USA
               </p>
               <p className="mb-2">
-                <i className="fa fa-phone-alt text-primary me-3"></i>+012 345
-                67890
+                <i className="fa fa-phone-alt text-primary  me-3"></i>
+                +012 345 67890
               </p>
               <p className="mb-2">
                 <i className="fa fa-envelope text-primary me-3"></i>
@@ -29,25 +29,25 @@ const Footer = () => {
                   className="btn btn-square btn-primary rounded-circle me-2"
                   href=""
                 >
-                  <i className="fab fa-twitter"></i>
+                  <i className="fab fa-twitter text-light"></i>
                 </a>
                 <a
                   className="btn btn-square btn-primary rounded-circle me-2"
                   href=""
                 >
-                  <i className="fab fa-facebook-f"></i>
+                  <i className="fab fa-facebook-f text-light"></i>
                 </a>
                 <a
                   className="btn btn-square btn-primary rounded-circle me-2"
                   href=""
                 >
-                  <i className="fab fa-youtube"></i>
+                  <i className="fab fa-youtube text-light"></i>
                 </a>
                 <a
                   className="btn btn-square btn-primary rounded-circle me-2"
                   href=""
                 >
-                  <i className="fab fa-linkedin-in"></i>
+                  <i className="fab fa-linkedin-in text-light"></i>
                 </a>
               </div>
             </div>
@@ -83,19 +83,19 @@ const Footer = () => {
               <h6 className="text-light">Closed</h6>
             </div>
 
-            {/* Newsletter Block */}
+            {/* Newsletter */}
             <div className="col-lg-3 col-md-6">
               <h4 className="text-primary mb-4">Newsletter</h4>
               <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
               <div className="position-relative w-100">
                 <input
-                  className="form-control bg-transparent w-100 py-3 ps-4 pe-5"
+                  className="input w-100 py-3 ps-4 pe-5"
                   type="text"
                   placeholder="Your email"
                 />
                 <button
                   type="button"
-                  className="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2"
+                  className="btn text-light btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2"
                 >
                   SignUp
                 </button>
@@ -108,18 +108,19 @@ const Footer = () => {
         <div className="container">
           <div className="row">
             <div className="col-md-6 text-center text-md-start mb-3 mb-md-0">
-              <a className="fw-medium" href="#">
+              &copy;{' '}
+              <a className="fw-medium text-primary" href="#">
                 Your Site Name
               </a>
               , All Right Reserved.
             </div>
             <div className="col-md-6 text-center text-md-end">
               Designed By{' '}
-              <a className="fw-medium" href="#">
+              <a className="fw-medium text-primary" href="#">
                 HTML Codex
               </a>{' '}
               Distributed By{' '}
-              <a className="fw-medium" href="#">
+              <a className="fw-medium text-primary" href="#">
                 ThemeWagon
               </a>
             </div>
