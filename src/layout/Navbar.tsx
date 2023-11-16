@@ -15,8 +15,7 @@ const Navbar = () => {
                     <div className="navbar-nav ms-auto">
                         <a href="index.php" className="nav-item nav-link">Home</a>
                         <a href="dashboard.php" className="nav-item nav-link">dashboard</a>                       
-                            <a href="login.php" className="nav-item nav-link">login</a>
-
+                        <a href="login.php" className="nav-item nav-link">login</a>
                         <a href="logout.php" className="nav-item nav-link">logout</a>
                     </div>
                 </div>
