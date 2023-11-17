@@ -1,7 +1,7 @@
 import ApiService from "./HttpService";
 import { toast } from "react-toastify";
 
-interface DynamicServiceProps {
+type  DynamicServiceProps = {
   service: string;
   payload?: Object;
   toastify?: Boolean;
