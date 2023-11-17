@@ -22,8 +22,8 @@ const RegisterForm = () => {
           placeholder="something@something.com"
           setterFunction={setEmail}
         />
-       <br />
-       <br />
+        <br />
+        <br />
         <label>Passwort:</label>
         <RegisterInput
           type="password"
@@ -32,7 +32,9 @@ const RegisterForm = () => {
         />
         <br />
         <br />
-        <button className="btn btn-primary" type="submit">Register</button>
+        <button className="btn btn-primary" type="submit">
+          Register
+        </button>
       </form>
     </div>
   );
