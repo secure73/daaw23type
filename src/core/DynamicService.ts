@@ -35,9 +35,9 @@ const DynamicService = async (props: DynamicServiceProps) => {
       myForm.append("file", file);
     }
 
-    let data = await ApiService.post("localhost", myForm).then(
+    let data = await ApiService.get("https://jsonplaceholder.typicode.com/posts").then(
       (response) => {
-        toastify === true && toast.success(toastifyMessage);
+        //toastify === true && toast.success(toastifyMessage);
         return response.data;
       }
     );

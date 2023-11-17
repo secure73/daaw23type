@@ -26,4 +26,5 @@ axios.interceptors.response.use(
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
   post: axios.post,
+  get: axios.get,
 };
