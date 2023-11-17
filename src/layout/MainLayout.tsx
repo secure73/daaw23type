@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import Header from './Header'
 
 type MainLayoutProps = {
@@ -6,10 +6,10 @@ type MainLayoutProps = {
 }
 const MainLayout = (props:MainLayoutProps) => {
   return (
-    <>
+    <Fragment>
      <Header />
-
-    </>
+      {props.children}
+    </Fragment>
   );
 }
 

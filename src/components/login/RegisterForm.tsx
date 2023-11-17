@@ -1,6 +1,7 @@
 // Teil von Dominik
 import React, { useState } from "react";
 import RegisterInput from "./register/RegisterInput";
+import { log } from "console";
 
 const RegisterForm = () => {
   const [email, setEmail] = useState<string>("");
@@ -10,7 +11,7 @@ const RegisterForm = () => {
   /*const register = () => {
     navigate("/");
   }*/
-
+console.log('register is running');
   return (
     <div className="col-lg-6">
       <h1>Register to website</h1>
