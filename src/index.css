@@ -1,1 +1,221 @@
+.footer,
+.copyright,
+.navbar {
+    --primary-ft: #88B44E;
+    --light-ft: #F5F8F2;
+    --dark-ft: #252C30;
+}
 
+
+/*** Navbar ***********************************************/
+.sticky-top {
+    top: -150px;
+    transition: .5s;
+}
+
+.navbar .navbar-brand {
+    position: absolute;
+    padding: 0;
+    width: 170px;
+    height: 135px;
+    top: 0;
+    left: 0;
+}
+
+.navbar .navbar-nav .nav-link {
+    margin-right: 35px;
+    padding: 25px 0;
+    color: var(--dark-ft);
+    font-weight: 600;
+    text-transform: uppercase;
+    outline: none;
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active {
+    color: var(--primary-ft);
+}
+
+.navbar .dropdown-toggle::after {
+    border: none;
+    content: "\f107";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    vertical-align: middle;
+    margin-left: 8px;
+}
+
+@media (max-width: 991.98px) {
+    .navbar .navbar-brand {
+        width: 126px;
+        height: 100px;
+    }
+
+    .navbar .navbar-nav .nav-link {
+        margin-right: 0;
+        padding: 10px 0;
+    }
+
+    .navbar .navbar-nav {
+        margin-top: 75px;
+        border-top: 1px solid #EEEEEE;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar .nav-item .dropdown-menu {
+        display: block;
+        border: none;
+        margin-top: 0;
+        top: 150%;
+        opacity: 0;
+        visibility: hidden;
+        transition: .5s;
+    }
+
+    .navbar .nav-item:hover .dropdown-menu {
+        top: 100%;
+        visibility: visible;
+        transition: .5s;
+        opacity: 1;
+    }
+}
+
+/***Ende  Navbar ***********************************************/
+
+
+
+/*  Footer ****************************************/
+
+.footer {
+    color: #B0B9AE;
+    background-color: var(--dark-ft);
+}
+
+.footer .btn {
+    transition: .5s;
+    font-weight: 500;
+}
+
+
+.footer .btn-secondary,
+.footer .btn-outline-secondary:hover {
+    color: var(--dark-ft) !important;
+}
+
+.footer .btn-square {
+    width: 38px;
+    height: 38px;
+}
+
+.footer .btn-sm-square {
+    width: 32px;
+    height: 32px;
+}
+
+.footer .btn-lg-square {
+    width: 48px;
+    height: 48px;
+}
+
+.footer .btn-square,
+.footer .btn-sm-square,
+.footer .btn-lg-square {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+}
+
+
+
+.footer h4,
+.footer h6 {
+    font-family: Playfair Display, serif;
+    font-weight: 700;
+
+
+}
+
+.footer a,
+.container-fluid a {
+    text-decoration: none;
+
+}
+
+
+.footer .input {
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 4px;
+    color: rgb(240, 232, 232);
+
+}
+
+.footer .text-primary,
+.copyright .text-primary {
+    color: var(--primary-ft) !important;
+
+}
+
+.footer .btn-primary {
+    background-color: var(--primary-ft) !important;
+    border-color: var(--primary-ft) !important;
+    color: var(--light-ft) !important;
+
+}
+
+.footer .btn-primary,
+.footer .fab {
+    color: var(--light-ft) !important;
+    transition: color 0.3s ease-in-out;
+
+}
+
+.footer .btn-primary:hover,
+.footer .fab:hover {
+
+    color: var(--dark-ft) !important;
+}
+
+
+.footer .btn.btn-link {
+    display: block;
+    margin-bottom: 5px;
+    padding: 0;
+    text-align: left;
+    color: #B0B9AE;
+    font-weight: normal;
+    text-transform: capitalize;
+    transition: .3s;
+}
+
+.footer .btn.btn-link::before {
+    position: relative;
+    content: "\f105";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: var(--primary-ft) !important;
+    margin-right: 10px;
+}
+
+.footer .btn.btn-link:hover {
+    color: var(--light-ft) !important;
+    letter-spacing: 1px;
+    box-shadow: none;
+}
+
+.copyright {
+    color: #B0B9AE;
+}
+
+.copyright {
+    background: #252525;
+}
+
+.copyright a:hover {
+    color: #FFFFFF !important;
+}
+
+/* Ende Footer ****************************************/
