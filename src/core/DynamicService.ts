@@ -37,7 +37,7 @@ const DynamicService = async (props: DynamicServiceProps) => {
 
     let data = await ApiService.get("https://jsonplaceholder.typicode.com/posts").then(
       (response) => {
-        //toastify === true && toast.success(toastifyMessage);
+        toastify === true && toast.success(toastifyMessage);
         return response.data;
       }
     );
