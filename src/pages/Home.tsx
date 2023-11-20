@@ -15,7 +15,7 @@ const Home = () => {
 
   const clickHandler = () => {
     
-    const vladimirRequest = DynamicService({service:'/posts'}).then((response) => {
+    const vladimirRequest = DynamicService({service:'/posts443'}).then((response) => {
         setMyData(response);
     }).catch((error) => {console.log(error)});
   }
