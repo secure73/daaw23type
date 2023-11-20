@@ -9,7 +9,9 @@ const MainLayout = (props:MainLayoutProps) => {
   return (
     <Fragment>
      <Header />
+     <div className='m-5 h-[screen]'>
       {props.children}
+     </div>
       <Footer/>
     </Fragment>
   );
