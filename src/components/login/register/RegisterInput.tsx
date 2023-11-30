@@ -13,7 +13,9 @@ const RegisterInput = (props:RegisterInputProps) => {
         <input
         type={props.type}
         placeholder={props.placeholder} 
-        required/>
+        required
+        onChange= {(e) => {props.setterFunction(e.target.value)}}
+        />
     </Fragment>
   )
 }
