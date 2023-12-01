@@ -1,5 +1,6 @@
 FROM node:latest
-COPY . .
+COPY composer.json .
 RUN npm install
+COPY . .
 CMD ["npm", "start"]
 EXPOSE 3000
