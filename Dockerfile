@@ -1,4 +1,4 @@
-FROM node 
+FROM node:lts-bullseye-slim
 COPY . .
 RUN npm install
 CMD ["npm", "start"]

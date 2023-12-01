@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import DynamicService from '../core/DynamicService'
+
 const Home = () => {
   
   type myPosts ={
@@ -13,17 +13,11 @@ const Home = () => {
 
 
 
-  const clickHandler = () => {
-    
-    const vladimirRequest = DynamicService({service:'/posts443'}).then((response) => {
-        setMyData(response);
-    }).catch((error) => {console.log(error)});
-  }
   return (
     <>
     <h1>Home</h1>
 
-    <button onClick={() => {clickHandler()} }>Click me</button>
+    <button onClick={() => {} }>Click me</button>
 
     <ul>
         {myData && myData.map((item) => {
